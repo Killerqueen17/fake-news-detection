@@ -1,13 +1,15 @@
-# Step 1: Unzip the project
-unzip fake_news_detection.zip
-cd fake_news_detection
+# 📰 Fake News Detection System
 
-# Step 2: Initialize git
-git init
-git remote add origin https://github.com/Killerqueen17/fake-news-detection.git
+A simple NLP project using Scikit-learn and Streamlit to detect whether a news article is fake or real.
 
-# Step 3: Commit and push
-git add .
-git commit -m "Initial commit: Fake News Detection Project"
-git branch -M main
-git push -u origin main
+## Features
+- Real-time prediction
+- Clean UI with Streamlit
+- Trained using TF-IDF and PassiveAggressiveClassifier
+
+## Usage
+```bash
+pip install -r requirements.txt
+python train_model.py
+streamlit run app.py
+```
